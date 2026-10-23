@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: result
+  labels:
+    app: result
+spec:
+  type: {{ .Values.result.service.type }}
+  ports:
+    - port: {{ .Values.result.service.port }}
+      targetPort: {{ .Values.result.port }}
+      name: result-service
+  selector:
+    app: result

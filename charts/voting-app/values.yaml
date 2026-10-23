@@ -1,0 +1,42 @@
+registry: ghcr.io
+
+vote:
+  image:
+    repository: vote
+    tag: latest
+    pullPolicy: IfNotPresent
+  replicas: 2
+  port: 80
+  service:
+    type: LoadBalancer
+    port: 5000
+
+result:
+  image:
+    repository: result
+    tag: latest
+    pullPolicy: IfNotPresent
+  replicas: 2
+  port: 80
+  service:
+    type: LoadBalancer
+    port: 5001
+
+worker:
+  image:
+    repository: worker
+    tag: latest
+    pullPolicy: IfNotPresent
+  replicas: 1
+
+redis:
+  image: redis:alpine
+  port: 6379
+
+db:
+  image: postgres:15-alpine
+  port: 5432
+  user: postgres
+  password: postgrespassword
+  name: postgres
+  storageSize: 1Gi

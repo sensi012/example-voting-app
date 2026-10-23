@@ -1,0 +1,7 @@
+.git
+.gitignore
+bin/
+obj/
+Dockerfile*
+docker-compose*
+README.md

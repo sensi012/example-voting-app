@@ -1,6 +1,6 @@
 # Capstone Project 1:
 
-This guide covers all 5 steps plus deliverables required for **Capstone 1
+This guide covers all 5 steps plus deliverables required for **Capstone 1**
 
 ---
 

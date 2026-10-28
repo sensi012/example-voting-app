@@ -9,6 +9,8 @@ module "eks" {
   vpc_id     = data.aws_vpc.default.id
   subnet_ids = data.aws_subnets.default.ids
 
+  cluster_endpoint_public_access = true
+
   # Create a simple group of worker nodes
   eks_managed_node_groups = {
     default = {

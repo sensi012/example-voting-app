@@ -1,6 +1,6 @@
-# Capstone Project 1: Ship It — Complete Step-by-Step Guide
+# Capstone Project 1:
 
-This guide covers all 5 steps plus deliverables required for **Capstone 1: Ship It (DevOps Capstone Projects — Beginner Edition)** for the Example Voting App.
+This guide covers all 5 steps plus deliverables required for **Capstone 1
 
 ---
 
@@ -574,3 +574,4 @@ helm upgrade --install voting-app ./charts/voting-app \
 - [x] **Unified Helm Chart**: All services deployed via `values.yaml`.
 - [x] **Live Rollback Demonstrated**: Deploy broken release, run `helm rollback`, verify zero-downtime recovery.
 - [x] **Architecture Diagram**: Clean diagram showing client flow through services and databases.
+### Adepegba Isaiah/sensi012
